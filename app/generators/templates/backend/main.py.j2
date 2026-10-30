@@ -1,0 +1,12 @@
+"""FastAPI entry point for {{ project_name }}.
+Generated based on intent.
+"""
+
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+async def root():
+    return {"message": "Welcome to {{ project_name }}!"}
+
